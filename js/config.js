@@ -21,6 +21,13 @@ const CONFIG = {
     },
     {
       category: 'General',
+      name: 'Innoreader',
+      key: 'in',
+      url: 'https://www.innoreader.com',
+      quickLaunch: true,
+    },
+    {
+      category: 'General',
       name: 'Mail',
       key: 'm',
       url: 'https://gmail.com',
@@ -31,13 +38,56 @@ const CONFIG = {
     },
     {
       category: 'General',
+      name: 'Google Calendar',
+      key: 'c',
+      url: 'https://calendar.google.com',
+      quickLaunch: true,
+    },
+    {
+      category: 'General',
       name: 'Drive',
       key: 'd',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
       color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
       icon: 'drive',
-      quickLaunch: false,
+      quickLaunch: true,
+    },
+    {
+      category: 'Learn',
+      name: 'Motamem',
+      key: 'mo',
+      url: 'https://motamem.org',
+      quickLaunch: true,
+    },
+    {
+      category: 'Learn',
+      name: 'Shabanali Blog',
+      key: 'mr',
+      url: 'https://mrshabanali.com',
+      quickLaunch: true,
+    }, 
+    
+    {
+      category: 'Tools',
+      name: 'Accuweather',
+      key: 'w',
+      url: 'https://www.accuweather.com/en/ir/yazd/211668/weather-forecast/211668',
+      quickLaunch: true,
+    },
+    {
+      category: 'Tools',
+      name: 'Windy',
+      key: 'wi',
+      url: 'https://www.windy.com/-Temperature-temp?temp,32.073,55.140,7,m:eyoahJk',
+      quickLaunch: true,
+    },
+    {
+      category: 'Tools',
+      name: 'Iran Calendar',
+      key: 'ic',
+      url: 'https://new.time.ir',
+      quickLaunch: true,
     }
   ],
 
@@ -45,7 +95,7 @@ const CONFIG = {
    * Get suggestions as you type.
    */
   suggestions: true,
-  suggestionsLimit: 4,
+  suggestionsLimit: 5,
 
   /**
    * The order and limit for each suggestion influencer. An "influencer" is
@@ -79,7 +129,7 @@ const CONFIG = {
    */
   defaultSuggestions: {
     g: ['g/issues', 'g/pulls', 'gist.github.com'],
-    r: ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology'],
+    r: ['r/r/webdev', 'r/r/technology'],
   },
 
   /**
