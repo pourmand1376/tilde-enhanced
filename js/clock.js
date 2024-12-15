@@ -4,10 +4,18 @@ class Clock {
       this._delimiter = options.delimiter;
       this._twentyFourHourClock = options.twentyFourHourClock;
       this._setTime = this._setTime.bind(this);
+      this._options = options; // Store options in the instance
       this._el.addEventListener('click', options.toggleHelp);
+      document.addEventListener('keydown', this._handleKeydown.bind(this));
       this._start();
     }
   
+    _handleKeydown(event) {
+      if (event.key === 'Enter') {
+        this._options.toggleHelp(); // Use this._options
+      }
+    }
+
     _setTime() {
       const date = new Date();
       let hours = $.pad(date.getHours());
